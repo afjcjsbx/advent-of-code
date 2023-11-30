@@ -6,3 +6,10 @@ lazy val root = (project in file("."))
   .settings(
     name := "advent-of-code"
   )
+
+val scalaTestVersion = "3.2.15"
+
+libraryDependencies ++= Seq(
+  "org.scalatest" %% "scalatest" % scalaTestVersion % Test,
+  "org.scalatest" %% "scalatest-flatspec" % scalaTestVersion % Test
+)
